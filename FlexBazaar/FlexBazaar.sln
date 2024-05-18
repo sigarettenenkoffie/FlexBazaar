@@ -1,0 +1,68 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.9.34902.65
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "FlexBazaar.Domain", "FlexBazaar.Domain\FlexBazaar.Domain.csproj", "{64233C51-1048-4415-A929-10B836EE7071}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "FlexBazaar.API", "FlexBazaar.API\FlexBazaar.API.csproj", "{9E0B910C-8CC7-4819-BF58-0F7BF47588D4}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "FlexBazaar.Infrastructure", "FlexBazaar.Infrastructure\FlexBazaar.Infrastructure.csproj", "{5A40CDA4-D55F-4A94-A92B-BE3C5432273C}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "FlexBazaar.Core", "FlexBazaar.Core\FlexBazaar.Core.csproj", "{C6750D7B-79CE-460F-BE51-B1E851603D68}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "FlexBazaar.IdentityServer", "FlexBazaar.IdentityServer\FlexBazaar.IdentityServer.csproj", "{351A8CE6-F471-4275-AA30-9EA48AF55B5D}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Clients", "Clients", "{593F808A-11E9-4A43-AC17-4C3B466F2E4C}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{39A2E954-5A6B-4662-8252-85BBDCEBA160}"
+	ProjectSection(SolutionItems) = preProject
+		..\.gitignore = ..\.gitignore
+		README.md = README.md
+	EndProjectSection
+EndProject
+Project("{54A90642-561A-4BB1-A94E-469ADEE60C69}") = "FlexBazaar.Web", "Clients\FlexBazaar.Web\FlexBazaar.Web.esproj", "{95661E59-D565-4A19-8F8B-BAAD87EEB022}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{64233C51-1048-4415-A929-10B836EE7071}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{64233C51-1048-4415-A929-10B836EE7071}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{64233C51-1048-4415-A929-10B836EE7071}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{64233C51-1048-4415-A929-10B836EE7071}.Release|Any CPU.Build.0 = Release|Any CPU
+		{9E0B910C-8CC7-4819-BF58-0F7BF47588D4}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9E0B910C-8CC7-4819-BF58-0F7BF47588D4}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9E0B910C-8CC7-4819-BF58-0F7BF47588D4}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9E0B910C-8CC7-4819-BF58-0F7BF47588D4}.Release|Any CPU.Build.0 = Release|Any CPU
+		{5A40CDA4-D55F-4A94-A92B-BE3C5432273C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5A40CDA4-D55F-4A94-A92B-BE3C5432273C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5A40CDA4-D55F-4A94-A92B-BE3C5432273C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5A40CDA4-D55F-4A94-A92B-BE3C5432273C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C6750D7B-79CE-460F-BE51-B1E851603D68}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C6750D7B-79CE-460F-BE51-B1E851603D68}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C6750D7B-79CE-460F-BE51-B1E851603D68}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C6750D7B-79CE-460F-BE51-B1E851603D68}.Release|Any CPU.Build.0 = Release|Any CPU
+		{351A8CE6-F471-4275-AA30-9EA48AF55B5D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{351A8CE6-F471-4275-AA30-9EA48AF55B5D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{351A8CE6-F471-4275-AA30-9EA48AF55B5D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{351A8CE6-F471-4275-AA30-9EA48AF55B5D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{95661E59-D565-4A19-8F8B-BAAD87EEB022}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{95661E59-D565-4A19-8F8B-BAAD87EEB022}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{95661E59-D565-4A19-8F8B-BAAD87EEB022}.Debug|Any CPU.Deploy.0 = Debug|Any CPU
+		{95661E59-D565-4A19-8F8B-BAAD87EEB022}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{95661E59-D565-4A19-8F8B-BAAD87EEB022}.Release|Any CPU.Build.0 = Release|Any CPU
+		{95661E59-D565-4A19-8F8B-BAAD87EEB022}.Release|Any CPU.Deploy.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{95661E59-D565-4A19-8F8B-BAAD87EEB022} = {593F808A-11E9-4A43-AC17-4C3B466F2E4C}
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {A120098B-DEC1-43F5-88A3-20026DDA0406}
+	EndGlobalSection
+EndGlobal

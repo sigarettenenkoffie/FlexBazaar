@@ -1,0 +1,6 @@
+@FlexBazaar.IdentityServer_HostAddress = http://localhost:5179
+
+GET {{FlexBazaar.IdentityServer_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###
