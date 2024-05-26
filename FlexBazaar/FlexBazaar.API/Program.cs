@@ -1,12 +1,12 @@
 var builder = WebApplication.CreateBuilder(args);
 
-// Add services to the container.
 
+// builder.Services.AddControllers();
+
+builder.Services.AddEndpoints();
+builder.Services.AddEndpointsApiExplorer();
 builder.Services.ConfigureCors();
 
-builder.Services.AddControllers();
-// Learn more about configuring Swagger/OpenAPI at https://aka.ms/aspnetcore/swashbuckle
-builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
 
 
@@ -21,14 +21,16 @@ if (app.Environment.IsDevelopment())
 
 app.UseHttpsRedirection();
 
-app.UseAuthorization();
+// app.UseAuthorization();
 
 app.UseCors("AllowOrigin"); // Enable CORS
 
-app.MapControllers();
+// app.MapControllers();
 
-app.MapControllerRoute(
-    name: "default",
-    pattern: "{controller=WhatEver}/{action=Index}/{id?}");
+// app.MapControllerRoute(
+//     name: "default",
+    // pattern: "{controller=WhatEver}/{action=Index}/{id?}");
+
+app.MapEndpoints();
 
 app.Run();
