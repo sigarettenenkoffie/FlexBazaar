@@ -13,7 +13,7 @@ public static class Config
     public static IEnumerable<ApiScope> ApiScopes =>
         new ApiScope[]
             { 
-                new ApiScope(name: "api", displayName: "FlexBazaar.API")
+                new ApiScope(name: "flexbazaar_api", displayName: "FlexBazaar.API")
             };
 
     public static IEnumerable<Client> Clients =>
@@ -34,7 +34,7 @@ public static class Config
                     },
 
                     // scopes that client has access to
-                    AllowedScopes = { "api" }
+                    AllowedScopes = { "flexbazaar_api" }
                 }
             };
 }
