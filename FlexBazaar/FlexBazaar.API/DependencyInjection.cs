@@ -22,6 +22,17 @@ public static class DependencyInjection
         return services;
     }
 
+    public static IServiceCollection ConfigureMapster(this IServiceCollection services)
+    {
+        var typeAdapterConfig = TypeAdapterConfig.GlobalSettings;
+        typeAdapterConfig.Scan(Assemblies);
+
+        services.AddSingleton(typeAdapterConfig);
+        services.AddScoped<IMapper, ServiceMapper>();
+
+        return services;
+    }
+
     public static IServiceCollection AddEndpoints(this IServiceCollection services)
     {
         var assembly = typeof(IAssemblyMarker).Assembly;

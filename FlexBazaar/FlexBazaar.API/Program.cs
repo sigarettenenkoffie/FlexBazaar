@@ -1,18 +1,25 @@
+using FlexBazaar.API.ErrorHandling;
+using FlexBazaar.Infrastructure;
+
 var builder = WebApplication.CreateBuilder(args);
 
+builder.Configuration.AddEnvironmentVariables();
 
-// builder.Services.AddControllers();
+builder.Services.ConfigureCoreLayer(builder.Configuration);
+builder.Services.ConfigureInfrastructureLayer(builder.Configuration);
+builder.Services.ConfigureMapster();
+builder.Services.ConfigureCors();
 
 builder.Services.AddEndpoints();
 builder.Services.AddEndpointsApiExplorer();
-builder.Services.ConfigureCors();
 
 builder.Services.AddSwaggerGen();
 
+builder.Services.AddExceptionHandler<GlobalExceptionHandler>();
+builder.Services.AddProblemDetails();
 
 var app = builder.Build();
 
-// Configure the HTTP request pipeline.
 if (app.Environment.IsDevelopment())
 {
     app.UseSwagger();
@@ -23,13 +30,8 @@ app.UseHttpsRedirection();
 
 // app.UseAuthorization();
 
-app.UseCors("AllowOrigin"); // Enable CORS
-
-// app.MapControllers();
-
-// app.MapControllerRoute(
-//     name: "default",
-    // pattern: "{controller=WhatEver}/{action=Index}/{id?}");
+if (app.Environment.IsDevelopment())
+    app.UseCors("AllowOrigin");
 
 app.MapEndpoints();
 
