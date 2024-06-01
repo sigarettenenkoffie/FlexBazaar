@@ -7,5 +7,6 @@
     <ShouldRunBuildScript>false</ShouldRunBuildScript>
     <!-- Folder where production build objects will be placed -->
     <BuildOutputFolder>$(MSBuildProjectDirectory)\dist</BuildOutputFolder>
+    <ProjectGuid>9c31f76d-0249-4004-9b65-d5fa07cf95f8</ProjectGuid>
   </PropertyGroup>
 </Project>
