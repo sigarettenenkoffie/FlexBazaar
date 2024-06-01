@@ -3,6 +3,7 @@ global using System;
 global using System.Reflection;
 global using System.Net;
 global using System.Collections.Immutable;
+global using Microsoft.AspNetCore.Mvc;
 
 // third-party
 global using Mapster;
