@@ -5,5 +5,4 @@ global using System.Collections.Immutable;
 global using MediatR;
 
 // solution
-global using FlexBazaar.Domain.ProductAggregate;
 global using FlexBazaar.BuildingBlocks.Exceptions;
