@@ -4,7 +4,7 @@ namespace FlexBazaar.UnitTests.BuldingBlocks;
 public class EntityBaseTests
 {
     [Fact]
-    public void entities_of_different_type_should_not_be_equal()
+    public void Entities_of_different_type_should_not_be_equal()
     {
         // Arrange
         var id = Guid.NewGuid();
@@ -22,7 +22,7 @@ public class EntityBaseTests
     }
 
     [Fact]
-    public void entities_of_same_type_should_be_equal_when_ids_match()
+    public void Entities_of_same_type_should_be_equal_when_ids_match()
     {
         // Arrange
         var id = Guid.NewGuid();
@@ -40,7 +40,7 @@ public class EntityBaseTests
     }
 
     [Fact]
-    public void entities_of_same_type_should_not_be_equal_when_ids_different()
+    public void Entities_of_same_type_should_not_be_equal_when_ids_different()
     {
         // Arrange
         var entityA = new ConcreteEntity(Guid.NewGuid());
